@@ -1,0 +1,61 @@
+.EmailForm{
+  width: 70vw;
+  /* background: red; */
+  margin: auto;
+}
+.EmailForm form{
+  width: 100%;
+}
+.headingMeet{
+  font-size: 30px;
+  color: var(--textColor);
+  margin: 10px 0px;
+  padding: 10px 0px;
+  /* border-bottom: 2px solid var(--theme); */
+}
+.inputField input{
+  width: 100%;
+  height: 50px;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid var(--textColor);
+  font-size: 18px;
+  color: var(--theme);
+  padding-left: 10px;
+}
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+button{
+  margin: 10px 0px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border-radius: 5px;
+  color: var(--theme);
+  font-size: 18px;
+  border: 2px solid var(--textColor);
+  cursor: pointer;
+}
+
+.EmailForm form button:hover{
+  background: var(--textColor);
+}
+.inputField{
+  margin: 10px 0px;
+}
+.inputField textarea{
+  width: 98%;
+  background: none;
+  border: 2px solid var(--textColor);
+  font-size: 18px;
+  color: var(--theme);
+  padding: 10px;
+}
+
+::placeholder{
+  color: var(--textColor);
+}

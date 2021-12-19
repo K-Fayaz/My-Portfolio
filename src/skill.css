@@ -1,0 +1,161 @@
+
+.heading{
+  font-size: 40px;
+  color: var(--textColor);
+  margin: 20px 0px 20px 40px;
+}
+
+.skillContainer{
+  padding: 10px 0px;
+  width: 95%;
+  height: auto;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: .8fr .8fr .8fr;
+  grid-template-rows: auto;
+  /* background-color: red; */
+  grid-gap: 15px;
+  margin: auto;
+}
+.skillCard{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  justify-content: space-around;
+  align-self: center;
+  border: 2px solid;
+  border-color: var(--theme);
+  border-radius: 10px;
+}
+.Icon{
+  width: 70px;
+  height: 70px;
+  color: var(--textColor);
+  /* background: yellow; */
+  align-self: center;
+}
+.tech{
+  align-self: center;
+  font-size: 30px;
+  color: var(--theme);
+}
+
+@media screen and (max-width: 800px)
+{
+  .skillContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+  .Icon{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .skillContainer{
+    grid-template-columns: .5fr .5fr;
+  }
+  .Icon{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Projects part styling */
+.project-container{
+  width: 70vw;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.project{
+  width: 100%;
+  /* background-color: red; */
+  height: auto;
+  min-height: 170px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0px;
+  border-top: 2px solid var(--textColor);
+  padding: 10px 0px;
+  /* border-bottom: 2px solid var(--textColor); */
+
+}
+.breef{
+  display: flex;
+  width: 100%;
+}
+.breef p{
+  font-size: 18px;
+  color: var(--theme);
+}
+.Project-icon,.project-link{
+  width: 50px;
+  height: 40px;
+}
+.Project-icon{
+  flex-basis: 20%;
+  color: var(--textColor);
+}
+.project-name{
+  color: var(--theme);
+  font-size: 35px;
+}
+.project-link{
+  color: var(--theme);
+}
+
+.project-link:hover{
+  color: var(--textColor);
+}
+.Intro-project{
+  color: var(--theme);
+}
+.links{
+  align-self: flex-end;
+  width: 20%;
+  display:flex;
+  justify-content: space-around;
+}
+.link-my-source{
+  color: var(--textColor);
+
+}
+
+@media screen and (max-width: 1000px)
+{
+  .project-container{
+    width: 85vw;
+  }
+  .Project-icon{
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .project-container{
+    width: 90vw;
+  }
+  .Project-icon{
+    flex-basis: 50%;
+  }
+  .links{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .breef{
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+  .breef *{
+    padding: 5px 0px;
+  }
+}
